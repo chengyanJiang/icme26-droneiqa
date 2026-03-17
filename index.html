@@ -355,26 +355,44 @@
 
             <!-- Submission 内容 -->
             <div class="tab-pane fade" id="t-submit" role="tabpanel">
-              <h5 class="fw-semibold mt-2">How to submit</h5>
-              <p class="small-muted">
-                  We provide <b>3,600</b> images as the training set and <b>1,200</b> images as the validation set. Participants should train their models using the training set and submit their predicted scores/results on the validation set, and report the corresponding validation performance.
-                </p>
-                
+                <h5 class="fw-semibold mt-2">How to submit</h5>
+              
                 <p class="small-muted">
-                  After the validation leaderboard is formed, we will contact the <b>top 5 teams</b> and request their trained model, model weights (parameters), and training/inference code to reproduce the reported results. We will then evaluate these reproduced models on a held-out test set.
+                  We provide <b>3,600</b> images as the training set and <b>1,200</b> images as the validation set.
+                  The training annotations are publicly released, while the validation annotations are <b>not public</b>.
+                  Participants should train their models using the released training data and generate predicted
+                  <b>Global Quality</b> scores for all validation images.
                 </p>
-                
+              
                 <p class="small-muted">
-                  The <b>final ranking</b> will be determined only by the test set score.
-                </p>
-                
-                <p class="small-muted mb-0">
-                  Please send your validation results, model, and training code to
+                  To participate, please email your <b>validation prediction CSV file</b> to
                   <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>.
-                  If you have any questions, feel free to contact us at the same email address.
+                  Please clearly indicate your <b>team name</b> in the email subject or body, and attach the CSV file containing
+                  your predicted scores for the validation set.
                 </p>
-        
-            </div>
+              
+                <p class="small-muted">
+                  We recommend naming the submission file as
+                  <code>TeamName_val_prediction.csv</code>.
+                  Each row in the CSV file should contain the image filename and the corresponding predicted score.
+                </p>
+              
+                <p class="small-muted">
+                  We will evaluate all submitted validation results and form the validation leaderboard.
+                  After that, we will contact the <b>top 5 teams</b> and request their trained model, model weights,
+                  and training/inference code for reproduction.
+                </p>
+              
+                <p class="small-muted">
+                  The reproduced methods will then be evaluated by the organizers on a <b>held-out test set</b>.
+                  The <b>final ranking</b> will be determined only by the performance on the test set.
+                </p>
+              
+                <p class="small-muted mb-0">
+                  If you have any questions regarding the dataset or submission, please contact us at
+                  <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>.
+                </p>
+              </div>
               
 
             <!-- Results 内容 -->
