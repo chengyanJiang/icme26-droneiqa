@@ -174,7 +174,8 @@
           <div class="card p-4">
             <div class="fw-semibold mb-2">News</div>
             <ul class="mb-0">
-              <li><span class="small-muted">2026-01-11</span>：Website online.</li>
+              <li><span class="small-muted">2026-01-11</span>: Website online.</li>
+              <li><span class="small-muted">2026-03-17</span>: Training annotation file (<code>train.csv</code>) has been added to the download page.</li>
             </ul>
           </div>
         </div>
@@ -436,23 +437,29 @@
 
           <!-- Data & Resources -->
           <div class="card p-4 shadow-sm" id="data">
-            <div class="fw-semibold mb-2">Data & Resources</div>
-
-            <div class="d-grid gap-2">
-              <div class="small-muted"><b>Training set</b></div>
-              <div class="d-flex gap-2 flex-wrap">
-                <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/train.tar.gz.part-aa" target="_blank" rel="noreferrer">Part 1</a>
-                <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/train.tar.gz.part-ab" target="_blank" rel="noreferrer">Part 2</a>
+              <div class="fw-semibold mb-2">Data & Resources</div>
+            
+              <div class="d-grid gap-2">
+                <div class="small-muted"><b>Training set</b></div>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/train.tar.gz.part-aa" target="_blank" rel="noreferrer">Part 1</a>
+                  <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/train.tar.gz.part-ab" target="_blank" rel="noreferrer">Part 2</a>
+                </div>
+            
+                <div class="small-muted mt-2"><b>Training annotations</b></div>
+                <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/train.csv" target="_blank" rel="noreferrer">Download train.csv</a>
+            
+                <div class="small-muted mt-2"><b>Validation set</b></div>
+                <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/val.zip" target="_blank" rel="noreferrer">Download Val</a>
               </div>
             
-              <div class="small-muted mt-2"><b>Validation set</b></div>
-              <a class="btn btn-outline-primary btn-sm" href="https://github.com/chengyanJiang/competition-website/releases/download/v1.0.0/val.zip" target="_blank" rel="noreferrer">Download Val</a>
-            </div>
-
-            <div class="small small-muted mt-2">
+              <div class="small small-muted mt-2">
+                The training annotation file (<code>train.csv</code>) is now available for download. Validation and test annotations are not publicly released.
+              </div>
+            
+              <div class="small small-muted mt-2">
                 Please refer to the data usage policy and citation guidelines provided in the data download page.
-              <!-- 【这里改】数据使用规则/引用方式 -->
-            </div>
+              </div>
           </div>
 
           <!-- Rules -->
@@ -460,7 +467,7 @@
             <div class="fw-semibold mb-2">Rules</div>
             <ul class="small-muted ps-0">
               <li>All evaluations will be performed using the official evaluation script. </li>
-              <li>Participants must submit prediction results for the official test set following the provided JSON submission format.</li>
+              <li>Participants must submit prediction results in the official CSV format specified on this page.</li>
               <li>Each team may submit up to three results per day.</li>
               <li>Any form of external data usage for pretraining, finetuning, distillation, or model selection is strictly prohibited.</li>
               <!-- 【这里改】比赛规则 -->
