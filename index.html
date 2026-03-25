@@ -176,6 +176,8 @@
             <ul class="mb-0">
               <li><span class="small-muted">2026-01-11</span>: Website online.</li>
               <li><span class="small-muted">2026-03-17</span>: Training annotation file (<code>train.csv</code>) has been added to the download page.</li>
+              <li><span class="small-muted">2026-03-25</span>: Validation result of team <b>David</b> has been evaluated and added to the leaderboard.</li>
+              <li><span class="small-muted">2026-03-25</span>: Validation result of team <b>DoubleY</b> has been evaluated and added to the leaderboard.</li>
             </ul>
           </div>
         </div>
@@ -399,35 +401,42 @@
             <div class="tab-pane fade" id="t-results" role="tabpanel">
               <h5 class="fw-semibold mt-2">Leaderboard (optional)</h5>
               <p class="small-muted">
-                Below are the current top results on the test set.
+                Below are the current top results on the val set.
                 <!-- 【这里改】排行榜说明 -->
               </p>
 
-              <!-- 结果表格 -->
               <div class="table-responsive">
-                <table class="table table-sm align-middle">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Team</th>
-                      <th>Score</th>
-                      <th>Paper/Code</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td><td>ExampleLab</td><td>0.9123</td><td><a href="#">link</a></td>
-                      <!-- 【这里改】第一名信息与链接 -->
-                    </tr>
-                    <tr>
-                      <td>2</td><td>Baseline</td><td>0.8000</td><td><a href="#">link</a></td>
-                      <!-- 【这里改】第二名信息与链接 -->
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                  <table class="table table-sm align-middle">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>PLCC</th>
+                        <th>SRCC</th>
+                        <th>Score</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>DoubleY</td>
+                        <td>0.926081</td>
+                        <td>0.914477</td>
+                        <td><b>0.920279</b></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>David</td>
+                        <td>0.841090</td>
+                        <td>0.831542</td>
+                        <td><b>0.836316</b></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
               <p class="small-muted mb-0">
+                The leaderboard is updated after each valid submission is evaluated.
               </p>
             </div>
 
