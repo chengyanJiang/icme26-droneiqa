@@ -182,6 +182,7 @@
               <li><span class="small-muted">2026-03-30</span>: Validation result of team <b>TASEAI</b> has been evaluated and added to the leaderboard.</li>
               <li><span class="small-muted">2026-03-31</span>: Validation results of teams <b>TASEAI</b>, <b>TJU_SJTU</b>, and <b>Tomcat</b> have been added to the leaderboard.</li>
               <li><span class="small-muted">2026-04-01</span>: Validation results of teams <b>TJU_SJTU</b> and <b>Echo</b> have been added to the leaderboard.</li>
+              <li><span class="small-muted">2026-04-02</span>: Validation results of teams <b>CMSR</b>, <b>Echo</b>, <b>Lushi</b>, <b>TASEAI</b>, and <b>TJU_SJTU</b> have been evaluated and the leaderboard has been updated.</li>
             </ul>
           </div>
         </div>
@@ -402,14 +403,14 @@
               
 
             <!-- Results 内容 -->
-            <div class="tab-pane fade" id="t-results" role="tabpanel">
-              <h5 class="fw-semibold mt-2">Leaderboard (optional)</h5>
-              <p class="small-muted">
-                Below are the current top results on the val set.
-                <!-- 【这里改】排行榜说明 -->
-              </p>
+           <div class="tab-pane fade" id="t-results" role="tabpanel">
+  <h5 class="fw-semibold mt-2">Validation Leaderboard</h5>
+  <p class="small-muted">
+    Below are the current top results on the validation set. The ranking score is computed as
+    <code>Score = (PLCC + SRCC) / 2</code>.
+  </p>
 
-          <div class="table-responsive">
+  <div class="table-responsive">
     <table class="table table-sm align-middle">
       <thead>
         <tr>
@@ -424,40 +425,54 @@
         <tr>
           <td>1</td>
           <td>TJU_SJTU</td>
-          <td>0.934456</td>
-          <td>0.925442</td>
-          <td><b>0.929949</b></td>
+          <td>0.937834</td>
+          <td>0.927782</td>
+          <td><b>0.932808</b></td>
         </tr>
         <tr>
           <td>2</td>
           <td>TASEAI</td>
-          <td>0.932296</td>
-          <td>0.927245</td>
-          <td><b>0.929770</b></td>
+          <td>0.933647</td>
+          <td>0.929260</td>
+          <td><b>0.931454</b></td>
         </tr>
         <tr>
           <td>3</td>
+          <td>CMSR</td>
+          <td>0.934173</td>
+          <td>0.927437</td>
+          <td><b>0.930805</b></td>
+        </tr>
+        <tr>
+          <td>4</td>
           <td>Echo</td>
           <td>0.927344</td>
           <td>0.919969</td>
           <td><b>0.923656</b></td>
         </tr>
         <tr>
-          <td>4</td>
+          <td>5</td>
           <td>DoubleY</td>
           <td>0.926081</td>
           <td>0.914477</td>
           <td><b>0.920279</b></td>
         </tr>
         <tr>
-          <td>5</td>
+          <td>6</td>
+          <td>Lushi</td>
+          <td>0.915374</td>
+          <td>0.907882</td>
+          <td><b>0.911628</b></td>
+        </tr>
+        <tr>
+          <td>7</td>
           <td>Tomcat</td>
           <td>0.854811</td>
           <td>0.844548</td>
           <td><b>0.849679</b></td>
         </tr>
         <tr>
-          <td>6</td>
+          <td>8</td>
           <td>David</td>
           <td>0.841090</td>
           <td>0.831542</td>
@@ -465,14 +480,14 @@
         </tr>
       </tbody>
     </table>
-  </div>>
+  </div>
+
+  <p class="small-muted mb-0">
+    The leaderboard is updated after each valid submission is evaluated.
+  </p>
+</div>
 
     
-
-              <p class="small-muted mb-0">
-                The leaderboard is updated after each valid submission is evaluated.
-              </p>
-            </div>
 
           </div><!-- tab-content -->
         </div><!-- card -->
