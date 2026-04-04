@@ -184,6 +184,7 @@
               <li><span class="small-muted">2026-04-01</span>: Validation results of teams <b>TJU_SJTU</b> and <b>Echo</b> have been added to the leaderboard.</li>
               <li><span class="small-muted">2026-04-02</span>: Validation results of teams <b>CMSR</b>, <b>Echo</b>, <b>Lushi</b>, <b>TASEAI</b>, and <b>TJU_SJTU</b> have been evaluated and the leaderboard has been updated.</li>
               <li><span class="small-muted">2026-04-03</span>: Validation results of teams <b>TJU_SJTU</b>, <b>CMSR</b>, and <b>Lushi</b> have been evaluated and the leaderboard has been updated.</li>
+              <li><span class="small-muted">2026-04-03</span>: The challenge result submission deadline has been extended to <b>April 11, 2026, 23:59 (UTC+8)</b>. In addition to the prediction CSV, participants are also required to submit their model code, environment setup instructions, and a <b>2-page extended abstract in IEEE conference format</b>.</li>
             </ul>
           </div>
         </div>
@@ -362,46 +363,54 @@
             </div>
 
             <!-- Submission 内容 -->
-            <div class="tab-pane fade" id="t-submit" role="tabpanel">
-                <h5 class="fw-semibold mt-2">How to submit</h5>
-              
-                <p class="small-muted">
-                  We provide <b>3,600</b> images as the training set and <b>1,200</b> images as the validation set.
-                  The training annotations are publicly released, while the validation annotations are <b>not public</b>.
-                  Participants should train their models using the released training data and generate predicted
-                  <b>Global Quality</b> scores for all validation images.
-                </p>
-              
-                <p class="small-muted">
-                  To participate, please email your <b>validation prediction CSV file</b> to
-                  <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>.
-                  Please clearly indicate your <b>team name</b> in the email subject or body, and attach the CSV file containing
-                  your predicted scores for the validation set.
-                </p>
-              
-                <p class="small-muted">
-                  We recommend naming the submission file as
-                  <code>TeamName_val_prediction.csv</code>.
-                  Each row in the CSV file should contain the image filename and the corresponding predicted score.
-                </p>
-              
-                <p class="small-muted">
-                  We will evaluate all submitted validation results and form the validation leaderboard.
-                  After that, we will contact the <b>top 5 teams</b> and request their trained model, model weights,
-                  and training/inference code for reproduction.
-                </p>
-              
-                <p class="small-muted">
-                  The reproduced methods will then be evaluated by the organizers on a <b>held-out test set</b>.
-                  The <b>final ranking</b> will be determined only by the performance on the test set.
-                </p>
-              
-                <p class="small-muted mb-0">
-                  If you have any questions regarding the dataset or submission, please contact us at
-                  <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>.
-                </p>
-              </div>
-              
+           <div class="tab-pane fade" id="t-submit" role="tabpanel">
+  <h5 class="fw-semibold mt-2">How to submit</h5>
+
+  <p class="small-muted">
+    We provide <b>3,600</b> images as the training set and <b>1,200</b> images as the validation set.
+    The training annotations are publicly released, while the validation annotations are <b>not public</b>.
+    Participants should train their models using the released training data and generate predicted
+    <b>Global Quality</b> scores for all validation images.
+  </p>
+
+  <p class="small-muted">
+    The challenge result submission deadline has been extended to
+    <b>April 11, 2026, 23:59 Beijing Time (UTC+8)</b>.
+          </p>
+        
+          <p class="small-muted">
+            To participate, please email the following materials to
+            <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>:
+          </p>
+        
+          <ul class="small-muted">
+            <li><b>Validation prediction CSV file</b> containing your predicted Global Quality scores for all validation images.</li>
+            <li><b>Model code</b> for inference/reproduction.</li>
+            <li><b>Environment setup instructions</b>, including required packages, library versions, and how to run the code.</li>
+            <li><b>A 2-page extended abstract in IEEE conference format</b>, clearly describing your method.</li>
+          </ul>
+        
+          <p class="small-muted">
+            Please clearly indicate your <b>team name</b> in the email subject or body. We recommend naming the submission file as
+            <code>TeamName_val_prediction.csv</code>.
+          </p>
+        
+          <p class="small-muted">
+            The CSV file should follow the official format with the columns:
+            <code>filename,global_quality_mean</code>
+          </p>
+        
+          <p class="small-muted">
+            After the submission deadline, the organizers will review the submitted materials and conduct the final evaluation.
+            Final rankings will be determined based on the official evaluation protocol.
+          </p>
+        
+          <p class="small-muted mb-0">
+            If you have any questions regarding the dataset or submission, please contact us at
+            <a href="mailto:cjiang92-c@my.cityu.edu.hk">cjiang92-c@my.cityu.edu.hk</a>.
+          </p>
+        </div>
+                      
 
             <!-- Results 内容 -->
           <div class="tab-pane fade" id="t-results" role="tabpanel">
@@ -504,10 +513,10 @@
            <ul class="small mb-0">
             <li><span class="small-muted">February 15, 2026</span> — Registration Opening Date</li>
             <li><span class="small-muted">March 10, 2026</span> — Training Data Release</li>
-            <li><span class="small-muted">April 4, 2026</span> — Challenge Result Submission Deadline</li>
+            <li><span class="small-muted">April 11, 2026, 23:59 (UTC+8)</span> — Challenge Result Submission Deadline (Extended)</li>
             <li><span class="small-muted">May 10, 2026</span> — Challenge Technical Paper Submission Deadline</li>
             <li><span class="small-muted">TBD</span> — Final Decisions (around May 15, 2026)</li>
-            </ul>
+          </ul>
               <!-- 【这里改】把 YYYY-MM-DD 换成真实日期 -->
             </ul>
           </div>
@@ -543,11 +552,11 @@
           <div class="card p-4 shadow-sm">
             <div class="fw-semibold mb-2">Rules</div>
             <ul class="small-muted ps-0">
-              <li>All evaluations will be performed using the official evaluation script. </li>
+              <li>All evaluations will be performed using the official evaluation script.</li>
               <li>Participants must submit prediction results in the official CSV format specified on this page.</li>
               <li>Each team may submit up to three results per day.</li>
               <li>Any form of external data usage for pretraining, finetuning, distillation, or model selection is strictly prohibited.</li>
-              <!-- 【这里改】比赛规则 -->
+              <li>Before the challenge result submission deadline, each team must also submit their model code, environment setup instructions, and a 2-page extended abstract in IEEE conference format.</li>
             </ul>
           </div>
 
