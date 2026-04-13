@@ -191,6 +191,7 @@
               <li><span class="small-muted">2026-04-08</span>: Validation results of teams <b>CMSR</b>, <b>TJU_SJTU</b>, and <b>VQATeam</b> have been evaluated and the leaderboard has been updated.</li>
               <li><span class="small-muted">2026-04-09</span>: Validation results of teams <b>Echo</b>, <b>rpanqa</b>, <b>VQATeam</b>, and <b>TJU_SJTU</b> have been evaluated and the leaderboard has been updated.</li>
               <li><span class="small-muted">2026-04-10</span>: Validation results of teams <b>Lushi</b>, <b>rpanqa</b>, <b>TJU_SJTU</b>, <b>Tomcat</b>, <b>VQATeam</b>, and <b>Watrix</b> have been evaluated and the leaderboard has been updated.</li>
+              <li><span class="small-muted">2026-04-11</span>: Final valid submissions from teams <b>CMSR</b>, <b>TJU_SJTU</b>, and <b>zhimoli</b> have been evaluated, and the validation leaderboard has been finalized.</li>
             </ul>
           </div>
         </div>
@@ -423,10 +424,10 @@
                       
 
             <!-- Results 内容 -->
-       <div class="tab-pane fade" id="t-results" role="tabpanel">
+     <div class="tab-pane fade" id="t-results" role="tabpanel">
   <h5 class="fw-semibold mt-2">Validation Leaderboard</h5>
   <p class="small-muted">
-    Below are the current top results on the validation set. The ranking score is computed as
+    Below are the final top results on the validation set. The ranking score is computed as
     <code>Score = (PLCC + SRCC) / 2</code>.
   </p>
 
@@ -444,31 +445,31 @@
       <tbody>
         <tr>
           <td>1</td>
+          <td>CMSR</td>
+          <td>0.946955</td>
+          <td>0.941335</td>
+          <td><b>0.944145</b></td>
+        </tr>
+        <tr>
+          <td>2</td>
           <td>rpanqa</td>
           <td>0.948317</td>
           <td>0.938895</td>
           <td><b>0.943606</b></td>
         </tr>
         <tr>
-          <td>2</td>
+          <td>3</td>
           <td>VQATeam</td>
           <td>0.945399</td>
           <td>0.936373</td>
           <td><b>0.940886</b></td>
         </tr>
         <tr>
-          <td>3</td>
+          <td>4</td>
           <td>TJU_SJTU</td>
           <td>0.941786</td>
           <td>0.931943</td>
           <td><b>0.936864</b></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>CMSR</td>
-          <td>0.941358</td>
-          <td>0.931469</td>
-          <td><b>0.936414</b></td>
         </tr>
         <tr>
           <td>5</td>
@@ -500,27 +501,34 @@
         </tr>
         <tr>
           <td>9</td>
+          <td>zhimoli</td>
+          <td>0.925523</td>
+          <td>0.918619</td>
+          <td><b>0.922071</b></td>
+        </tr>
+        <tr>
+          <td>10</td>
           <td>DoubleY</td>
           <td>0.926081</td>
           <td>0.914477</td>
           <td><b>0.920279</b></td>
         </tr>
         <tr>
-          <td>10</td>
+          <td>11</td>
           <td>Lushi</td>
           <td>0.915374</td>
           <td>0.907882</td>
           <td><b>0.911628</b></td>
         </tr>
         <tr>
-          <td>11</td>
+          <td>12</td>
           <td>Tomcat</td>
           <td>0.898872</td>
           <td>0.889633</td>
           <td><b>0.894253</b></td>
         </tr>
         <tr>
-          <td>12</td>
+          <td>13</td>
           <td>David</td>
           <td>0.841090</td>
           <td>0.831542</td>
@@ -531,10 +539,9 @@
   </div>
 
   <p class="small-muted mb-0">
-    The leaderboard is updated after each valid submission is evaluated.
+    The validation leaderboard has been finalized after the submission deadline.
   </p>
 </div>
-
     
 
           </div><!-- tab-content -->
