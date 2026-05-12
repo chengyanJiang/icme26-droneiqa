@@ -192,6 +192,7 @@
               <li><span class="small-muted">2026-04-09</span>: Validation results of teams <b>Echo</b>, <b>rpanqa</b>, <b>VQATeam</b>, and <b>TJU_SJTU</b> have been evaluated and the leaderboard has been updated.</li>
               <li><span class="small-muted">2026-04-10</span>: Validation results of teams <b>Lushi</b>, <b>rpanqa</b>, <b>TJU_SJTU</b>, <b>Tomcat</b>, <b>VQATeam</b>, and <b>Watrix</b> have been evaluated and the leaderboard has been updated.</li>
               <li><span class="small-muted">2026-04-11</span>: Final valid submissions from teams <b>CMSR</b>, <b>TJU_SJTU</b>, and <b>zhimoli</b> have been evaluated, and the validation leaderboard has been finalized.</li>
+              <li><span class="small-muted">2026-05-xx</span>: The second-round final results on the held-out test set have been released.</li>
             </ul>
           </div>
         </div>
@@ -424,7 +425,8 @@
                       
 
             <!-- Results 内容 -->
-     <div class="tab-pane fade" id="t-results" role="tabpanel">
+     <!-- Results 内容 -->
+<div class="tab-pane fade" id="t-results" role="tabpanel">
   <h5 class="fw-semibold mt-2">Validation Leaderboard</h5>
   <p class="small-muted">
     Below are the final top results on the validation set. The ranking score is computed as
@@ -538,10 +540,75 @@
     </table>
   </div>
 
-  <p class="small-muted mb-0">
+  <p class="small-muted">
     The validation leaderboard has been finalized after the submission deadline.
   </p>
+
+  <hr class="my-4">
+
+  <h5 class="fw-semibold mt-2">Final Results on the Held-out Test Set</h5>
+  <p class="small-muted">
+    Below are the second-round final results evaluated by the organizers on the held-out test set.
+    The ranking score is computed as <code>Score = (PLCC + SRCC) / 2</code>.
+  </p>
+
+  <div class="table-responsive">
+    <table class="table table-sm align-middle">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Team</th>
+          <th>PLCC</th>
+          <th>SRCC</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>cmsr</td>
+          <td>0.951217</td>
+          <td>0.945027</td>
+          <td><b>0.948122</b></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>VQA</td>
+          <td>0.948365</td>
+          <td>0.942018</td>
+          <td><b>0.945191</b></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Echo</td>
+          <td>0.939353</td>
+          <td>0.933202</td>
+          <td><b>0.936278</b></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>TASEAI</td>
+          <td>0.929278</td>
+          <td>0.924395</td>
+          <td><b>0.926836</b></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>watrix</td>
+          <td>0.926178</td>
+          <td>0.922582</td>
+          <td><b>0.924380</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="small-muted mb-0">
+    The final ranking is based on the held-out test set evaluation.
+  </p>
 </div>
+
+  
     
 
           </div><!-- tab-content -->
